@@ -1,0 +1,10 @@
+message test
+?message?
+je viens déjà de faire un test de message. Faisons un qui envoie un fichier
+?file?
+nonnon.dezdezd
+test.txt
+?message?
+Je renvoie un message comme ça, je peux savoir que tout fonctionne correctement.
+Maintenant je SORS du programme (exit)
+?exit?

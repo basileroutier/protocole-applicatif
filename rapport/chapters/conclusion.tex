@@ -1,0 +1,16 @@
+\chapter{Conclusion}
+
+Un protocole applactif est l'un de ses ensembles de règles permettant à un serveur de pouvoir assurer une certaine sécurité et de vérification des paquets envoyés. Sans celui-ci, les sites internet permettant la retransmission d'informations n'aurait pas su voir le jour. \\ \par
+
+La transmission d'informations tel que les messages, les fichiers, les gifs, et pleins d'autres fonctionnalités sont maintenant omniprésents dans nos vies et sans cela nous ne pourrions plus discuter, ... C'est pour cela qu'un protocole applicatif est fait, gérer différentes fonctionnalités en essayant de limiter le nombre d'erreurs le maximum possibles.
+
+Dans notre protocole applicatif mise en place, pas mal de sécurités et vérifications sont à revoir pour que notre protocole applicatif puisse fonctionné sans que des 'grosses erreurs' arrivent. Nous pouvons citer notemment :
+\begin{itemize}
+    \item L'envoie de fichier, nous vérifions pas si une personne envoie un fichier trop gros
+    \item L'envoie de message, nous définissons 8192 bytes pour l'envoie max de message, le problème étant que si pleins de messages arrivent en même temps sur le serveur. Celui-ci pourrait lire plusieurs messages en même temps et donc causé d'énormes soucis.
+    \item Nous ne donnons pas de clé unique à un utilisateur ce qui peut causé des problèmes dans la lecture d'un message (on croit lire un message venant de x mais c'est le message de y).
+\end{itemize}
+
+Toutes ses règles peuvent bien évidemment être rajouté au protocole applicatif et donc permettre une meilleure sécurité de celle-ci...
+
+Ne passons pas outre notre protocole réseau, le TCP que nous avons utilisé pour la garantie des messages et le trie de celui-ci. Chaque protocole réseau à des avantages et des inconcivénients. Chacun doit être choisi en fonction de ce que vous souhaiteriez réalisés.

@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo zypper install '(tex(appendix.sty)'
+pdflatex BasileRoutier_ProtocoleApplicatif.tex
+bibtex BasileRoutier_ProtocoleApplicatif
+pdflatex BasileRoutier_ProtocoleApplicatif.tex
